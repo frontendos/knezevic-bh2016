@@ -1,0 +1,450 @@
+/* Defines how the width and height of the element are calculated: whether they include the padding and borders or not. */
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 26px;
+    color: #141200;
+}
+
+a {
+    color: #141200;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Abril Fatface';
+}
+
+html {
+    font-size: 26px;
+    line-height: 1.5;
+    /*box-sizing: border-box;*/
+}
+
+.Container {
+
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Clearfix {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    background: #000;
+    height: 30px;
+    line-height: 30px;
+}
+
+.Heading {
+    display: block;
+    font-size: 36px;
+}
+
+.Heading-desc {
+    display: block;
+}
+
+.Logo {
+    float: left;
+    font-size: 20px;
+    font-family: 'Abril Fatface';
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.Menu-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #000;
+}
+
+.Menu-icon img {
+    width: 100%;
+    height: auto;
+}
+ 
+.Menu-iconLine {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s opacity ease-in-out;
+}
+
+.Menu-iconLine:before,
+.Menu-iconLine:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    margin: -6px 0 0;
+    width: 30px;
+    height: 2px;
+    transition: 0.5s translate ease-in-out;
+}
+
+.Menu-iconLine:after {
+    margin: 6px 0 0;
+}
+
+
+.Nav {
+    position: fixed;
+    right: 0;
+    top: 30px;
+    bottom: 0;
+    background: #141200;
+    width: 100%;
+    transform: translateX(100%);
+    transition: 0.5s transform ease-in-out;
+}
+
+.Nav-list {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.Nav-listItem {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.Nav-listItem a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s opacitz ease-in-out;
+}
+
+.Nav-ListItem a:hover {
+    opacity: 0.6;
+}
+
+.has-menu .Menu-iconLine {
+    background: transparent;
+}
+
+.has-menu .Menu-iconLine:before {
+    transform: rotate(-45deg);
+}
+
+.has-menu .Menu-iconLine:after {
+    transform: rotate(45deg);
+}
+
+.has-menu .Nav {
+    transform: translateX(0);
+}
+
+.Hero {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.Hero-bck {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: fixed;
+    opacity: 0;
+    transition: opacity 0.5s ease-in.out;
+}
+
+.Hero-bck:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.Hero-bck.is-active {
+    opacity: 1;
+}
+
+.Hero-bck--1 {
+    background-image: url('../img/picture-1-1600x1000.jpg');
+}
+
+.Hero-bck--1:after {
+     background: #FFFFFF;
+}
+
+.Hero-bck--2 {
+    background-image: url('../img/picture-2-1600x1000.jpg')
+}
+
+.Hero-bck--2:after {
+     background: #FF5A00;
+}
+
+.Hero-bck--3 {
+    background-image: url('../img/picture-3-1600x1000.jpg')
+}
+
+.Hero-bck--3:after {
+     background: #FFE400;
+}
+
+.Hero-wb {
+    position: relative;
+}
+
+.Hero-space {
+    display: block;
+}
+.Hero-wbCircle {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 10px 20px;
+    z-index: 20;
+    border-radius: 100%;s
+    opacity: 0.4;
+    transition: 0.5s opacity ease-in-out;
+}
+
+.Hero-wbCircle {
+    opacity: 1;
+}
+
+.Hero-wbCircle--1 {
+    background: #FFFFFF;
+}
+
+.Hero-wbCircle--2 {
+    background: #FF5A00;
+}
+
+.Hero-wbCircle--3 {
+    background: #FFE400;
+}
+
+.Hero-space {
+    display: none;
+    z-index: 20;
+}
+
+.Hero-space--earth {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.Hero-space--mars {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.Hero-space img {
+    width: 40px;
+    height: auto;
+}
+
+.Hero-spaceName {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Abril Fatface';
+}
+
+.Space {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.Space:after {
+    position: absolute;
+    content: '';
+    bottom: 100px;
+    width: 300%;
+    left: 50%;
+    margin: 0 -150%;
+    background: #efefef;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.Space-text {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    transform: translateX(-90%);
+    transition: 0.5s transform ease-in-out;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.Space-textTitle {
+    font-family: 'Abril Fatface';
+    font-size: 22px;
+}
+
+.Space-textDesc {
+
+}
+
+
+.Space-textShuttle {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    transform: rotate(90deg);
+    width: 100px;
+}
+
+.Space-clickMe {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 5px 30px;
+    background: #FF5A00;
+    font-size: 20px;
+}
+
+
+.hit-and-run .Space-text {
+    transform: translateX(0);
+}
+
+.hit-and-run .Space:after {
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+
+.Form {
+    text-align: center;
+}
+
+.Form-row {
+    padding: 10px 0;
+}
+
+.Form-label {
+    font-family: 'Abril Fatface';
+    font-size: 22px;
+}
+
+.Form-radio {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    transition: 0.5s box-shadow ease-in-out;
+}
+
+.Form-radio:after {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    top: 5px;
+    left 5px;
+}
+
+.Form-radio:hover,
+.Form-radio:focus,
+.Form-radio:checked {
+     box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.Form-radio--1:after {
+    background-image: url('../img/2-earth.svg');
+}
+
+.Form-radio--2:after {
+    background-image: url('../img/4-mars.svg');
+}
+
+.Form-radio--3:after {
+    background-image: url('../img/8-saturn-svg');
+}
+
+.Form-radio:checked ~ label span {
+    background: red;
+}
+
+.Form-input {
+    font-family: 'Roboto';
+    border: 0;
+    padding: 3px 20px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.Lorem {
+    padding: 20px 0;
+    text-align: center;
+    max-width: 500px;
+}
+
+.Footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .Header {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .Menu-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .Nav {
+        top: 50px;
+        width: 300px;
+    } 
+
+    .Hero-space {
+        display: inline-block;
+    }
+
+    .Hero-wbCircle {
+        height: 140px;
+        width: 140px;
+    }
+
+    .Lorem {
+        padding: 100px 0;
+    }
+
+
+}

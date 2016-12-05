@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>web.shuttle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <header role="header" class="Header">
+            <div class="Container">
+
+                <div class="Logo">web.shuttle</div>
+
+                <div class="Menu-icon js-toggleMenu">
+                    <img src="img/navicon-round.svg">
+                </div>
+
+                <nav class="Nav">
+                    <ul class="Nav-list">
+                        <li class="Nav-listItem">
+                            <a class="js-scrollTo" href="#hero">Hero</a>
+                        </li>
+
+                        <li class="Nav-listItem">
+                            <a class="js-scrollTo" href="#space">Space</a>
+                        </li>
+
+                        <li class="Nav-listItem">
+                            <a class="js-scrollTo" href="#shuttle">Shuttle</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+
+        <section id="hero" class="Hero js-hero">
+
+            <div class="Hero-bck Hero-bck--1 is-active"></div>
+            <div class="Hero-bck Hero-bck--2"></div>
+            <div class="Hero-bck Hero-bck--3"></div>
+
+            <figure class="Hero-space Hero-space--earth">
+                <img src="img/2-earth.svg" alt="Earth">
+                <div class="Hero-spaceName">Earth</div>
+            </figure>
+
+            <figure class="Hero-space Hero-space--mars">
+                <img src="img/4-mars.svg" alt="Mars">
+                <div class="Hero-spaceName">Mars</div>
+            </figure>
+
+            <div class="Hero-wb">
+                <div class="Hero-space">
+                    <span class="Hero-wbCircle Hero-wbCircle--1 js-changeHero" data-slide="1"></span>
+                    <span class="Hero-wbCircle Hero-wbCircle--2 js-changeHero" data-slide="2"></span>
+                </div>    
+
+                <div class="Hero-space">
+                    <span class="Hero-wbCircle Hero-wbCircle--3 js-changeHero" data-slide="3"></span>
+                </div>
+                <div class="Hero-spaceName">web.space ( hover for change universum )</div>
+            </div>
+
+        </section>
+        
+
+        <section id="space" class="Space">
+            <div class="Space-clickMe js-hitrun">Hit and run!</div>
+
+            <article role="article" class="Space-text">
+                <img class="Space-textShuttle" src="img/31-shuttle.svg">
+                <h2 class="Heading">This is your space!</h2>
+                <div class="Heading-desc">This is space description.</div>
+            </div>
+        </section>
+
+        <section id="shuttle" class="Shuttle">
+           
+            <h2 class="Heading">Join to planet.</h2>
+            <div class="Heading-desc">This is space description.</div>
+
+            <form class="Form">
+
+                <div class="Form-row">
+                    <label>
+                        <span class="Form-label">Choose a planet:</span>
+                        <input type="radio" name="type" class="Form-radio Form-radio--1 js-floatingLabel" value="type1">
+                        <input type="radio" name="type" class="Form-radio Form-radio--2 js-floatingLabel" value="type2">
+                        <input type="radio" name="type" class="Form-radio Form-radio--3 js-floatingLabel" value="type3">
+                    </label>
+                </div>
+
+                <div class="Form-row">
+                    <label>
+                        <span class="Form-label">Contact info</span>
+                        <input type="text" name="info" class="Form-input js-floatingLabel">
+                    </label>
+                </div>
+            </form>
+        </section>
+
+
+        <section id="lorem" class="Lorem">
+
+            <div class="Container">
+                <h2 class="Heading">About web.space</h2>
+
+                <div class="Lorem-text">
+                    A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the fis have succeeded than encouraging people who have not.
+
+                    Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+
+                    I believe every human has a finite number of heartbeats. I don't intend to waste any of mine
+
+                    As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="Footer">
+            <div class="Container">
+                Production. DK2016.
+            </div> 
+        </section>
+
+        <script src="js/vendor/jquery-3.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+ 
